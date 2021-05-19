@@ -1,0 +1,347 @@
+body{
+    background-color: #f0f0f0;
+  }
+  header{
+    background-color: #d3d3d3;
+    background-image: linear-gradient(315deg, #d3d3d3 0%, #7f8c8d 24%);
+    background-size:100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  section{
+    background-color: #fff;
+
+  }
+  .mainmenu.pull-left{
+    margin-left: 5%;
+  }
+  .nav.navbar-nav.collapse.navbar-collapse li a{
+    font-size: 100%;
+    color: white;
+  }   
+  .chaticon {
+    font-size:500%;
+    position:absolute;
+    top:75%;
+    right: 10%;
+
+  }
+  .chatbot{
+
+    position:absolute;
+    background:red;
+    top:23%;
+    right: 3%;
+
+    width:30% ;
+    height:65vh;
+    background:#dedede;
+    z-index: 0;
+    transition:all 0.3s ease-out;
+    transform:scaleY(0);
+    border-radius: 10px;
+
+  } 
+  .chatbot.active{
+    transform:scaleY(1);
+    height:75vh;
+    z-index: 0;
+  }
+
+
+
+  .close{
+   display: none;
+   position: absolute;
+   top: 25%;
+   right:  17%;
+   z-index: 1000;
+   opacity: 0;
+
+
+ }
+ .close.show{
+  font-size: 250%;
+  opacity: 0.4;
+
+}
+.slider{
+
+  border: 1px solid black;
+
+}
+.btn.btn-primary.btn-sm{
+ border-radius: 10px;
+ color: black;
+ width: 50%;
+}
+.btn.btn-primary.btn-sm:hover{
+ background-color: #26a69a;
+
+}
+
+.auto{
+  position: absolute;
+  left: 15%;
+}
+.welcome{
+  margin : auto;
+  width: 40%;
+  height: 80%;
+  background-color: none;
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: 30%;
+}
+/* PRODUCT của Home */
+.swiper-container {
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 10%;
+
+}
+.swiper-slide img{
+  transition: 0.5s ease-out;
+
+}
+.swiper-slide:hover img{
+  transform: translate(0, -5%)
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.product-image-wrapper{
+  height: 100%;
+  width: 90%;
+  border: 1px solid black;
+  position: relative;
+  border-radius: 10px;
+}   
+.single-products{
+  height: 80%;
+  position: absolute;
+  top: 5%;
+}
+.single-products a{
+  height: 100%;
+}
+.productinfo.text-center{
+  height: 100%; 
+  background-size: cover;  
+}
+.product-image-wrapper img{
+  width: 80%;
+  height: 80%;
+  transition: 0.5s ease-out;
+}
+.product-image-wrapper:hover img{
+  transform: translate(0, -5%);
+
+}
+
+
+.features_items{
+
+  width: 100%;
+}
+.pagination.pagination-sm.m-t-none.m-b-none{
+  margin-left: 40%;
+}
+
+.page-item a:hover{
+  border-radius: 10px;
+  background-color: #26a69a;
+}   
+.btn.btn-default.add-to-cart{
+  position: absolute;
+  left: 27%;
+}
+
+.title.text-center{
+  color: black;
+  font-size: 150%;
+}
+.swiper-button-next{
+  position: absolute;
+
+}
+.producthome{
+  width: 100%;
+}
+.producthome:hover .swiper-button-next {
+  opacity: 1;
+
+}
+.swiper-button-next{
+  opacity: 0;
+  transition: 0.5s ease-out;
+  color: black;
+  background-color: #26a69a;
+  border-radius: 5px;
+}
+.producthome:hover .swiper-button-prev {
+  opacity: 1;
+}
+.swiper-button-prev{
+  opacity: 0;
+  transition: 0.5s ease-out;
+  background-color: #26a69a;
+  color: black;
+  border-radius: 5px;
+}
+h5{
+  float: left;
+  font-size: 30px;
+  color: #333;
+  font-weight: 600;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+.btn.btn-default.add-to-cart{
+  position: absolute;
+  left: 8%;
+}
+/* Clock */
+
+.microphone{
+ font-size: 150%;
+ margin: 5%;
+ color: white;
+ cursor: pointer;
+}
+#clock{
+  position: absolute;
+  right: 2%;
+  top: 0;
+  height: 10%;
+
+}
+#clock #time{
+ display: flex;
+}
+#clock #time div{
+  position: relative;
+  margin: 0 5px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#0004  );
+}
+#clock #time div span{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 80px;
+  background: #2196f3;
+  color: black;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  z-index: 10;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+
+}
+#clock #time div span:nth-child(2){
+  height: 30px;
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  z-index: 9;
+  box-shadow: none;
+  background:#127fd6
+  ;
+  text-transform: uppercase;
+}
+#clock #time div:last-child span{
+  background: #ff006a;
+}
+#clock #time div:last-child span:nth-child(2){
+  background: #ec0062;
+
+}
+
+#id5{
+  background-image: url('https://tse1.mm.bing.net/th?id=OIP.FUYG2ULJI1LzxUqxK9pCZQHaHa&pid=Api&P=0&w=300&h=300');
+  height: 10px;
+  width: 10px;
+}
+h6{
+  color: black;
+}
+.slider{
+  height: 50vh;
+}
+footer{
+  width: 100vw;
+  height: 30vh;
+
+}
+.social {
+  height: 100%;
+}
+.social li{
+  display: inline-block;
+  font-size: 300%;
+  margin: 5%;
+  height: 100%;
+
+}
+.social li a{
+  color: black;
+}
+
+.social li:hover a{
+  background-color: transparent;
+  transform: translate(0, -10%);
+  color: red;
+}
+.menu-footer li{
+  margin: 10%;
+}
+
+.menu-footer li a{
+  font-size: 150%;
+  color: black;
+  font-weight: 700;
+}
+.menu-footer li:hover a{
+  background-color: transparent;
+  color: red;
+}
+.info li:hover a{
+  background-color: transparent;
+
+}
+.info li span{
+  font-size: 120%;
+  font-weight: 700;
+}
